@@ -23,7 +23,7 @@ class PhotoCollectionViewCell: UICollectionViewCell {
             return URLCache(
                 memoryCapacity: memoryCapacity,
                 diskCapacity: diskCapacity,
-                directory: URL(fileURLWithPath: diskPath, isDirectory: true)
+                directory: URL.directoryInsideDocuments(diskPath)
             )
         }
         else {

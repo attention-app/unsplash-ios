@@ -17,7 +17,7 @@ class ImageCache {
             return URLCache(
                 memoryCapacity: Configuration.shared.memoryCapacity,
                 diskCapacity: Configuration.shared.diskCapacity,
-                directory: URL(fileURLWithPath: diskPath, isDirectory: true)
+                directory: URL.directoryInsideDocuments(diskPath)
             )
         } else {
             #if !targetEnvironment(macCatalyst)
