@@ -39,7 +39,7 @@ extension URL {
         return newComponents.url ?? self
     }
 
-    public static func directoryInsideDocuments(_ dir: String) -> URL {
+    public static func documentsSubdirectory(_ dir: String) -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let path = paths[0]
         return path.appendingPathComponent(dir, isDirectory: true)
