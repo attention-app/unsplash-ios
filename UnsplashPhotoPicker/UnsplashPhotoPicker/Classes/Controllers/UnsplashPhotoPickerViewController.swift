@@ -118,6 +118,8 @@ class UnsplashPhotoPickerViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = UIColor.photoPicker.background
+        navigationController?.navigationBar.setBackgroundImage(UIImage(withBackground: UIColor.white), for: .default)
+
         setupNotifications()
         setupNavigationBar()
         setupSearchController()
