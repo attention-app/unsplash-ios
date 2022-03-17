@@ -18,7 +18,7 @@ public struct UnsplashUser: Codable {
     }
 
     public enum LinkKind: String, Codable {
-        case `self`
+        case own = "self"
         case html
         case photos
         case likes

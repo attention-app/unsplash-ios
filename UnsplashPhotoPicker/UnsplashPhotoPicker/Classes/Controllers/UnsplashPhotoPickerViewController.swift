@@ -41,6 +41,9 @@ class UnsplashPhotoPickerViewController: UIViewController {
         searchController.searchBar.delegate = self
         searchController.searchBar.placeholder = "search.placeholder".localized()
         searchController.searchBar.autocapitalizationType = .none
+        searchController.searchBar.backgroundImage = UIImage(withBackground: UIColor.white)
+//        searchController.setBackgroundImage(UIImage(withBackground: UIColor.white), for: .default)
+
         return searchController
     }()
 
